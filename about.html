@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>About • Rowland Restorations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">Rowland <span>Restorations</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">About Rowland Restorations</h1>
+      <p style="max-width:900px;">
+        I document complete builds—from metalwork and paint to wiring, ECU tuning, and first fire.
+        Rowland Restorations is where classic <em>feel</em> meets modern performance and reliability.
+        If you’re into Pro-Touring muscle, clean harnesses, or making old tech behave like new, you’re in the right place.
+      </p>
+
+      <div class="grid" style="margin-top:18px;">
+        <article class="card">
+          <div class="card-body">
+            <h3>What I Do</h3>
+            <ul>
+              <li>Full and partial restorations</li>
+              <li>Drivetrain & suspension upgrades</li>
+              <li>Modern wiring, gauges & infotainment</li>
+              <li>ECU installs, tuning, diagnostics</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3>How I Work</h3>
+            <p>
+              Practical, serviceable, and documented. I share parts lists, wiring notes, and lessons learned so
+              others can follow along or reproduce the setup on their own projects.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3>Follow Along</h3>
+            <p>
+              I post build videos, troubleshooting tips, and shakedown runs on YouTube.
+              Subscribe and say hi—questions are welcome.
+            </p>
+            <a class="btn btn-secondary" target="_blank" href="https://www.youtube.com/@RowlandRestorations">YouTube Channel ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rowland Restorations • Orlando, FL</p>
+      <div class="social">
+        <a target="_blank" href="https://github.com/drowland341">GitHub</a>
+        <a target="_blank" href="https://www.youtube.com/@RowlandRestorations">YouTube</a>
+        <a target="_blank" href="mailto:contact@rowlandrestorations.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

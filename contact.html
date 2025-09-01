@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Contact • Rowland Restorations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- minimal form cosmetics without touching your main stylesheet -->
+  <style>
+    .form-card input, .form-card textarea {
+      width:100%; padding:12px 14px; border-radius:10px;
+      border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); color:var(--text);
+    }
+    [data-theme="light"] .form-card input, [data-theme="light"] .form-card textarea {
+      background:#fff; border:1px solid rgba(0,0,0,.12); color:var(--text);
+    }
+    .form-card label { display:block; margin:8px 0 6px; font-weight:600; }
+    .form-actions { display:flex; gap:12px; margin-top:12px; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">Rowland <span>Restorations</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Get in Touch</h1>
+      <div class="grid">
+        <article class="card form-card">
+          <div class="card-body">
+            <h3>Send a message</h3>
+            <!-- Mailto fallback form (opens your mail client). 
+                 Later you can swap action to Formspree/Netlify if you want serverless submissions. -->
+            <form onsubmit="
+              const s=encodeURIComponent(this.subject.value||'Message from website');
+              const b=encodeURIComponent(this.message.value+'\n\nFrom: '+(this.name.value||'')+' <'+(this.email.value||'')+'>');
+              window.location.href='mailto:contact@rowlandrestorations.com?subject='+s+'&body='+b;
+              return false;">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" />
+
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="What’s this about?" />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can I help?"></textarea>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send Email</button>
+                <a class="btn btn-ghost" href="mailto:contact@rowlandrestorations.com">Open in Email App</a>
+              </div>
+            </form>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3>Elsewhere</h3>
+            <p><strong>Email:</strong> <a href="mailto:contact@rowlandrestorations.com">contact@rowlandrestorations.com</a></p>
+            <p><strong>YouTube:</strong> <a target="_blank" href="https://www.youtube.com/@RowlandRestorations">@RowlandRestorations</a></p>
+            <p><strong>GitHub:</strong> <a target="_blank" href="https://github.com/drowland341">drowland341</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rowland Restorations • Orlando, FL</p>
+      <div class="social">
+        <a target="_blank" href="https://github.com/drowland341">GitHub</a>
+        <a target="_blank" href="https://www.youtube.com/@RowlandRestorations">YouTube</a>
+        <a target="_blank" href="mailto:contact@rowlandrestorations.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
