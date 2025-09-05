@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Projects • Rowland Restorations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">Rowland <span>Restorations</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Featured cards (quick nav) -->
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Projects</h1>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media" style="background-image:url('assets/images/camaro.jpg')"></div>
+          <div class="card-body">
+            <h3>1973 Charger</h3>
+            <p>QA1 suspension, AC, touchscreen dash, roots blower.</p>
+            <a class="btn btn-link" href="#camaro">Jump to build →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('assets/images/barracuda.jpg')"></div>
+          <div class="card-body">
+            <h3>’74 Barracuda – Rust to Road</h3>
+            <p>Metalwork, alignment, prep—panel by panel.</p>
+            <a class="btn btn-link" href="#barracuda">Jump to build →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('assets/images/kawasaki.jpg')"></div>
+          <div class="card-body">
+            <h3>Kawasaki Jet Ski – ECU Swap</h3>
+            <p>Speeduino NO2C, K-Line diagnostics, custom harness.</p>
+            <a class="btn btn-link" href="#jetski">Jump to build →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed sections -->
+  <section class="section" id="charger">
+    <div class="container">
+      <h2 class="section-title">1973 Dodge Charger Restomod </h2>
+      <p>Full series: suspension, modern gauges/infotainment, blower install, wiring clean-up, and road testing.</p>
+      <div class="grid">
+        <article class="card"><div class="card-body">
+          <h3>Highlights</h3>
+          <ul>
+            <li>QA1 coilovers • UMI control arms</li>
+            <li>Vintage Air • custom brackets & lines</li>
+            <li>Holley-style dash & tablet mount</li>
+            <li>Roots blower, belt routing & tension</li>
+          </ul>
+          <a class="btn btn-secondary" target="_blank" href="https://www.youtube.com/@RowlandRestorations">Watch the playlist ↗</a>
+        </div></article>
+        <article class="card"><div class="card-body">
+          <h3>Gallery</h3>
+            <div class="slider" aria-label="1973 Charger gallery">
+            <button class="slide-nav prev" aria-label="Previous image">‹</button>
+
+            <div class="slides">
+                <!-- One anchor per image: the href opens in lightbox at full res -->
+                <a href="assets/images/1973charger/1973charger.jpg">
+                <img src="assets/images/1973charger/1973charger.jpg" alt="1973 Charger — overall view" loading="lazy">
+                </a>
+                <a href="assets/images/1973charger/1973charger1.jpg">
+                <img src="assets/images/1973charger/1973charger1.jpg" alt="1973 Charger — front 3/4" loading="lazy">
+                </a>
+                <a href="assets/images/1973charger/1973charger2.jpg">
+                <img src="assets/images/1973charger/1973charger2.jpg" alt="1973 Charger — engine bay" loading="lazy">
+                </a>
+                <a href="assets/images/1973charger/1973charger3.jpg">
+                <img src="assets/images/1973charger/1973charger3.jpg" alt="1973 Charger — interior" loading="lazy">
+                </a>
+                <a href="assets/images/1973charger/1973charger4.jpg">
+                <img src="assets/images/1973charger/1973charger4.jpg" alt="1973 Charger — rear 3/4" loading="lazy">
+                </a>
+            </div>
+
+  <button class="slide-nav next" aria-label="Next image">›</button>
+  <div class="dots" aria-hidden="true"></div>
+</div>
+
+
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="barracuda">
+    <div class="container">
+      <h2 class="section-title">’74 Barracuda — Rust to Road</h2>
+      <p>Floor pans, panel fitment, blasting, epoxy, and re-assembly. Focus on strong fundamentals and straight seams.</p>
+      <div class="grid">
+        <article class="card"><div class="card-body">
+          <h3>Metalwork Checklist</h3>
+          <ul>
+            <li>Inner/outer rockers & lower quarters</li>
+            <li>Door/fender gaps and alignment</li>
+            <li>Panel welding sequence & heat control</li>
+          </ul>
+        </div></article>
+        <article class="card"><div class="card-body">
+          <h3>Notes</h3>
+          <p>Detailed clamp setup and brace strategy before cutting structural sections—shown step-by-step in the series.</p>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="jetski">
+    <div class="container">
+      <h2 class="section-title">Kawasaki Jet Ski — ECU & Harness</h2>
+      <p>Open-source ECU swap with reliable cold starts and diagnostics. Harness designed for serviceability & water resistance.</p>
+      <div class="grid">
+        <article class="card"><div class="card-body">
+          <h3>Tech Bits</h3>
+          <ul>
+            <li>Speeduino NO2C + K-Line</li>
+            <li>Weather-sealed connectors</li>
+            <li>Custom PCB for ancillaries</li>
+          </ul>
+        </div></article>
+        <article class="card"><div class="card-body">
+          <h3>Resources</h3>
+          <a class="btn btn-secondary" target="_blank" href="https://github.com/drowland341">GitHub repos ↗</a>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rowland Restorations • Orlando, FL</p>
+      <div class="social">
+        <a target="_blank" href="https://github.com/drowland341">GitHub</a>
+        <a target="_blank" href="https://www.youtube.com/@RowlandRestorations">YouTube</a>
+        <a target="_blank" href="mailto:contact@rowlandrestorations.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
